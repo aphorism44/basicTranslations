@@ -1,0 +1,32 @@
+const gameItems = [
+  { "name": "PAINTING", "location": "SPOOKY ROOM", "type": "TREASURE", "flag": 0  }
+  , { "name": "RING", "location": "DEEP CELLAR", "type": "TREASURE", "flag": 0  }
+  , { "name": "BOOK OF SPELLS", "location": "SECRET ROOM", "type": "TREASURE", "flag": 0  }
+  , { "name": "GOBLET", "location": "FRONT TOWER", "type": "TREASURE", "flag": 0  }
+  , { "name": "SCROLLS", "location": "REAR TURRET ROOM", "type": "TREASURE", "flag": 0  }
+  , { "name": "COINS", "location": "DARK ALCOVE", "type": "TREASURE", "flag": 0  }
+  , { "name": "STATUE", "location": "HALL", "type": "TREASURE", "flag": 0  }
+  , { "name": "CANDLESTICK", "location": "LIBRARY", "type": "TREASURE", "flag": 0  }
+
+  , { "name": "KEY", "location": "CUPBOARD", "type": "ITEM", "prop": "COAT", "flag": 0  }
+  , { "name": "VACUUM CLEANER", "location": "GLOOMY PASSAGE", "type": "ITEM", "flag": 0  }
+  , { "name": "AXE", "location": "BY WOODPILE", "type": "ITEM", "flag": 0  }
+  , { "name": "MATCHES", "location": "KITCHEN", "type": "ITEM", "flag": 0  }
+  , { "name": "BATTERIES", "location": "POOL OF LIGHT", "type": "ITEM", "flag": 0  }
+  , { "name": "CANDLE", "location": "STUDY", "type": "ITEM", "flag": 0  }
+  , { "name": "SHOVEL", "location": "WEEDPATCH", "type": "ITEM", "flag": 0  }
+  , { "name": "AERESOL CAN", "location": "DEBRIS", "type": "ITEM", "flag": 0  }
+  , { "name": "ROPE", "location": "BLASTED TREE", "type": "ITEM", "flag": 0  }
+  , { "name": "BOAT", "location": "CLIFF PATH BY MARSH", "type": "ITEM", "flag": 0  }
+
+  , { "name": "DOOR", "location": "FRONT LOBBY", "type": "PROP", "flag": 0  }
+  , { "name": "BATS", "location": "REAR TURRET ROOM", "type": "PROP", "flag": 0  }
+  , { "name": "GHOSTS", "location": "UPPER GALLERY", "type": "PROP", "flag": 0  }
+  , { "name": "DRAWER", "location": "STUDY", "type": "PROP", "flag": 0  }
+  , { "name": "DESK", "location": "STUDY", "type": "PROP", "flag": 0  }
+  , { "name": "COAT", "location": "CUPBOARD", "type": "PROP", "flag": 0  }
+  , { "name": "COFFIN", "location": "DEEP CELLAR", "type": "PROP", "flag": 0  }
+  , { "name": "BARRED WINDOW", "location": "CLIFF PATH BY WINDOW", "type": "PROP", "flag": 0  }
+  , { "name": "RUBBISH", "location": "YARD", "type": "PROP", "flag": 0  }
+  , { "name": "RUBBLE", "location": "VERANDA", "type": "PROP", "flag": 0  }
+];

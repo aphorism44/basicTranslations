@@ -1,0 +1,259 @@
+const gameRooms = [
+  {
+    "row": 0, "col": 0, "name": "DARK CORNER"
+    , "exits": ["E", "S"]
+  }
+  , {
+    "row": 0, "col": 1, "name": "OVERGROWN GARDEN"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 0, "col": 2, "name": "BY WOODPILE"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 0, "col": 3, "name": "YARD"
+    , "exits": ["E", "S", "W"]
+  }
+  , {
+    "row": 0, "col": 4, "name": "WEEDPATCH"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 0, "col": 5, "name": "FOREST"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 0, "col": 6, "name": "THICK FOREST"
+    , "exits": ["E", "S", "W"]
+  }
+  , {
+    "row": 0, "col": 7, "name": "BLASTED TREE"
+    , "exits": ["S", "W"]
+  }
+  , {
+    "row": 1, "col": 0, "name": "CORNER OF HOUSE"
+    , "exits": ["N", "S"]
+  }
+  , {
+    "row": 1, "col": 1, "name": "ENTRANCE TO KITCHEN"
+    , "exits": ["E", "S"]
+  }
+  , {
+    "row": 1, "col": 2, "name": "KITCHEN"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 1, "col": 3, "name": "SCULLERY DOOR"
+    , "exits": ["N", "W"]
+  }
+  , {
+    "row": 1, "col": 4, "name": "DUSTY ROOM"
+    , "exits": ["E", "S"]
+  }
+  , {
+    "row": 1, "col": 5, "name": "REAR TURRET ROOM"
+    , "exits": ["W"]
+  }
+  , {
+    "row": 1, "col": 6, "name": "CLEARING"
+    , "exits": ["N", "E"]
+  }
+  , {
+    "row": 1, "col": 7, "name": "PATH"
+    , "exits": ["N", "S", "W"]
+  }
+  , {
+    "row": 2, "col": 0, "name": "SIDE OF HOUSE"
+    , "exits": ["N", "S"]
+  }
+  , {
+    "row": 2, "col": 1, "name": "BACK OF HALLWAY"
+    , "exits": ["N", "S"]
+  }
+  , {
+    "row": 2, "col": 2, "name": "DARK ALCOVE"
+    , "exits": ["E", "S"]
+  }
+  , {
+    "row": 2, "col": 3, "name": "SMALL DARK ROOM"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 2, "col": 4, "name": "SPIRAL STAIRCASE"
+    , "exits": ["N/U", "W/D"]
+  }
+  , {
+    "row": 2, "col": 5, "name": "WIDE PASSAGE"
+    , "exits": ["E", "S"]
+  }
+  , {
+    "row": 2, "col": 6, "name": "SLIPPERY STEPS"
+    , "exits": ["S/D", "W/U"]
+  }
+  , {
+    "row": 2, "col": 7, "name": "CLIFFTOP"
+    , "exits": ["N", "S"]
+  }
+  , {
+    "row": 3, "col": 0, "name": "CRUMBLING WALL"
+    , "exits": ["N"]
+  }
+  , {
+    "row": 3, "col": 1, "name": "GLOOMY PASSAGE"
+    , "exits": ["N", "S"]
+  }
+
+  , {
+    "row": 3, "col": 2, "name": "POOL OF LIGHT"
+    , "exits": ["N", "E", "S"]
+  }
+  , {
+    "row": 3, "col": 3, "name": "VAULTED HALL"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 3, "col": 4, "name": "HALL WITH LOCKED DOOR"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 3, "col": 5, "name": "TROPHY ROOM"
+    , "exits": ["N", "S", "W"]
+  }
+  , {
+    "row": 3, "col": 6, "name": "CELLAR"
+    , "exits": ["N", "S"]
+  }
+  , {
+    "row": 3, "col": 7, "name": "CLIFF PATH BY WINDOW"
+    , "exits": ["N", "S"]
+  }
+  , {
+    "row": 4, "col": 0, "name": "CUPBOARD"
+    , "exits": ["S"]
+  }
+  , {
+    "row": 4, "col": 1, "name": "FRONT HALL"
+    , "exits": ["N", "S"]
+  }
+  , {
+    "row": 4, "col": 2, "name": "SITTING ROOM"
+    , "exits": ["N", "W", "S"]
+  }
+  , {
+    "row": 4, "col": 3, "name": "SECRET ROOM"
+    , "exits": ["S"]
+  }
+  , {
+    "row": 4, "col": 4, "name": "STEEP MARBLE STAIRS"
+    , "exits": ["N/D", "S"]
+  }
+  , {
+    "row": 4, "col": 5, "name": "DINING ROOM"
+    , "exits": ["N"]
+  }
+  , {
+    "row": 4, "col": 6, "name": "DEEP CELLAR"
+    , "exits": ["N"]
+  }
+  , {
+    "row": 4, "col": 7, "name": "CLIFF PATH"
+    , "exits": ["N", "S"]
+  }
+  , {
+    "row": 5, "col": 0, "name": "CLOSET"
+    , "exits": ["N", "E"]
+  }
+  , {
+    "row": 5, "col": 1, "name": "FRONT LOBBY"
+    , "exits": ["N", "W", "S"]
+  }
+  , {
+    "row": 5, "col": 2, "name": "LIBRARY"
+    , "exits": ["N", "E"]
+  }
+  , {
+    "row": 5, "col": 3, "name": "STUDY"
+    , "exits": ["W"]
+  }
+  , {
+    "row": 5, "col": 4, "name": "COBWEBBY ROOM"
+    , "exits": ["N", "E", "S"]
+  }
+  , {
+    "row": 5, "col": 5, "name": "COLD CHAMBER"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 5, "col": 6, "name": "SPOOKY ROOM"
+    , "exits": ["W"]
+  }
+  , {
+    "row": 5, "col": 7, "name": "CLIFF PATH BY MARSH"
+    , "exits": ["N", "S"]
+  }
+  , {
+    "row": 6, "col": 0, "name": "VERANDA"
+    , "exits": ["E", "S"]
+  }
+  , {
+    "row": 6, "col": 1, "name": "FRONT PORCH"
+    , "exits": ["N", "S", "W"]
+  }
+  , {
+    "row": 6, "col": 2, "name": "FRONT TOWER"
+    , "exits": ["E"]
+  }
+  , {
+    "row": 6, "col": 3, "name": "SLOPING CORRIDOR"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 6, "col": 4, "name": "UPPER GALLERY"
+    , "exits": ["N", "W"]
+  }
+  , {
+    "row": 6, "col": 5, "name": "MARSH BY WALL"
+    , "exits": ["S"]
+  }
+  , {
+    "row": 6, "col": 6, "name": "MARSH"
+    , "exits": ["S", "W"]
+  }
+  , {
+    "row": 6, "col": 7, "name": "SOGGY PATH"
+    , "exits": ["N", "W"]
+  }
+  , {
+    "row": 7, "col": 0, "name": "TWISTED RAILINGS"
+    , "exits": ["N", "E"]
+  }
+  , {
+    "row": 7, "col": 1, "name": "PATH"
+    , "exits": ["N", "E", "W"]
+  }
+  , {
+    "row": 7, "col": 2, "name": "PATH BY RAILINGS"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 7, "col": 3, "name": "BENEATH"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 7, "col": 4, "name": "DEBRIS"
+    , "exits": ["E", "W"]
+  }
+  , {
+    "row": 7, "col": 5, "name": "FALLEN BRICKWORK"
+    , "exits": ["N", "E", "W"]
+  }
+  , {
+    "row": 7, "col": 6, "name": "STONE ARCH"
+    , "exits": ["N", "E", "W"]
+  }
+  , {
+    "row": 7, "col": 7, "name": "CRUMBLING CLIFFTOP"
+    , "exits": ["W"]
+  }
+];
